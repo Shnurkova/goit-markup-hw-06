@@ -467,10 +467,6 @@ img{
     justify-content: flex-start;
 }
 
-.svg-list-footer{
-    display: flex;
-    gap: 16px;
-}
 
 .social-media-footer-text{
     color: var(--WHITE, #FFF);
@@ -479,6 +475,11 @@ img{
     line-height: 1.5;
     letter-spacing: 0.02em;
     margin-bottom: 16px;;
+}
+
+.svg-list-footer {
+    display: flex;
+    gap: 16px;
 }
 
 .svg-list-item-footer{
