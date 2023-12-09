@@ -52,7 +52,7 @@ img {
 }
 
 .container {
-    max-width: 288px;
+    max-width: 320px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
@@ -221,7 +221,6 @@ img {
     background-size: cover;
     margin: 0 auto;
     max-width: 320px;
-    height: 432px;
     padding-top: 77px;
     padding-bottom: 72px;    
 }
@@ -305,7 +304,6 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px){
 }
 
 .item-container {
-    width: 288px;
     margin-bottom: 8px;
 }
 /* ===========/MOBILE SECOND SECTION========= */
@@ -467,7 +465,6 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px){
    .first-section {
        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/background-tablet.jpg);
        max-width: 768px;
-       height: 436px;
        padding-top: 112px;
        padding-bottom: 112px;
    }
@@ -578,7 +575,6 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
         padding-top: 188px;
         padding-bottom: 188px;
         max-width: 1440px;
-        height: 600px;
     }
 
     .button:hover,
