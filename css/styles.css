@@ -58,6 +58,8 @@ img {
     padding-left: 15px;
     padding-right: 15px;
 }
+
+
 /* ===========/COMMON STYLES=========== */
 
 
@@ -213,18 +215,179 @@ img {
 /* =========== MOBILE FIRST SECTION=========== */
 .first-section {
     background-color: #2E2F42;
-    background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/background-hero.jpg);
-    padding-top: 72px;
-    padding-bottom: 72px;
-    max-width: 320px;
-    /* max-height: 431px; */
+    background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/background-mobile.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    margin: 0 auto;
+    max-width: 320px;
+    height: 432px;
+    padding-top: 77px;
+    padding-bottom: 72px;    
+}
+
+@media screen and (min-resolution: 192dpi) and (max-width: 767px),
+screen and (min-resolution: 2dppx) and (max-width: 767px),
+screen and (min-device-pixel-ratio: 2) and (max-width: 767px){
+    .first-section{
+        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/background-mobile@2x.jpg);
+    }
+}
+
+.main-title{
+    color: var(--WHITE, #FFF);
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 72px;
+    max-width: 169px;
+}
+
+.button {
+    color: var(--WHITE, #FFF);
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    font-family: "Roboto", sans-serif;
+    background: var(--IRIS, #4D5AE5);
+    font-weight: 500;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    padding: 16px 32px;
+    min-width: 169px;
+    height: 56px;
+    border: none;
 }
 /* ===========/MOBILE FIRST SECTION=========== */
 
 
+/* ===========MOBILE SECOND SECTION========= */
+.section {
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+
+.advantages-list-container {
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+}
+
+.svg-container{
+    display: none;
+}
+
+.section-title {
+    color: var(--NAVY-BLUE, #2E2F42);
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+}
+
+.section-text {
+    color: var(--SLATE, #434455);
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.item-container {
+    width: 288px;
+    margin-bottom: 8px;
+}
+/* ===========/MOBILE SECOND SECTION========= */
+
+
+/* ===========MOBILE THIRD SECTION========== */
+.third-section {
+    background: var(--CLOUD, #F4F4FD);
+}
+
+.title {
+    color: var(--NAVY-BLUE, #2E2F42);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 72px;
+}
+
+.team-container {
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+}
+
+.list-item {
+    background-color: #FFFFFF;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+
+}
+
+.team-text-container {
+    text-align: center;
+    padding: 32px 0;
+    margin-bottom: 8px;
+}
+
+.section-title-team {
+    color: var(--NAVY-BLUE, #2E2F42);
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    margin-bottom: 8px;
+}
+
+.svg-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 8px;
+}
+
+.svg-list-item {
+    width: 40px;
+    height: 40px;
+}
+
+.svg-list-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #4D5AE5;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.svg-item {
+    fill: #F4F4FD;
+}
+
+
+/* ===========/MOBILE THIRD SECTION========== */
 
 
 @media screen and (min-width: 768px) {
@@ -239,6 +402,10 @@ img {
 
    .mobile-menu-wrapper{
     display: none;
+   }
+
+   .page-header{
+    padding: 0;
    }
 
    .nav-container {
@@ -297,9 +464,59 @@ img {
 
 
    /* =========== TABLET FIRST SECTION=========== */
+   .first-section {
+       background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/background-tablet.jpg);
+       max-width: 768px;
+       height: 436px;
+       padding-top: 112px;
+       padding-bottom: 112px;
+   }
+
+   .main-title {
+       font-size: 56px;
+       font-weight: 700;
+       line-height: 1.07;
+       margin-bottom: 36px;
+       max-width: 496px;
+   }
 
    /* ===========/TABLET FIRST SECTION=========== */
 
+
+   /* ===========TABLET SECOND SECTION========= */
+   .advantages-list-container {
+       flex-direction: row;
+       flex-wrap: wrap;
+       column-gap: 24px;
+       row-gap: 72px;
+       padding-left: 0;
+   }
+
+   .advantages-list-item{
+    width: calc((100% - 24px) / 2);
+   }
+
+   .section-title{
+    text-align: left;
+   }
+
+   .item-container {
+       width: 356px;
+       margin-bottom: 8px;
+   }
+   /* ===========/TABLET SECOND SECTION========= */
+
+   /* ===========TABLET THIRD SECTION========== */
+
+   /* ===========/TABLET THIRD SECTION========== */
+
+}
+@media screen and (min-resolution: 192dpi) and (min-width: 768px),
+screen and (min-resolution: 2dppx) and (min-width: 768px),
+screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
+    .first-section {
+        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/background-tablet@2x.jpg);
+    }
 }
 
 
@@ -324,11 +541,105 @@ img {
         display: block;
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
+
+    .link-text:hover,
+    .link-text:focus,
+    .link-text:active {
+        color: var(--OCEAN, #404BBF);
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+    }
+
+    .link-studio::after {
+        display: block;
+        content: '';
+        width: 48px;
+        height: 4px;
+        background-color: #404BBF;
+        border-radius: 2px;
+        position: absolute;
+        left: 0;
+        bottom: -1px;
+    }
+    .address-link:hover,
+    .address-link:focus {
+        font-weight: 400;
+        justify-content: center;
+        flex-shrink: 0;
+        color: #404BBF;
+    }
     /* ===========/DESKTOP HEADER=========== */
 
 
     /* =========== DESKTOP FIRST SECTION=========== */
+    .first-section {
+        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/background-hero.jpg);
+        padding-top: 188px;
+        padding-bottom: 188px;
+        max-width: 1440px;
+        height: 600px;
+    }
 
+    .button:hover,
+    .button:focus {
+        background-color: #404BBF;
+        font-weight: 500;
+    }
     /* ===========/DESKTOP FIRST SECTION=========== */
 
+
+    /* ===========DESKTOP SECOND SECTION========= */
+    .section {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    .advantages-list-container {
+        gap: 24px;
+    }
+
+    .advantages-list-item {
+        width: calc((100% - 72px) / 4);
+    }
+
+    .svg-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 24px 100px;
+        margin-bottom: 8px;
+        border-radius: 4px;
+        width: 264px;
+        height: 112px;
+        border: 1px solid var(--LIGHT-SLATE, #8E8F99);
+        background: var(--CLOUD, #F4F4FD);
+    }
+
+    .section-title {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        margin-bottom: 8px
+    }
+
+    .item-container {
+        width: 264px;
+    }
+    /* ===========/DESKTOP SECOND SECTION========= */
+
+
+    /* ===========DESKTOP THIRD SECTION========== */
+    
+    /* ===========/DESKTOP THIRD SECTION========== */
+
 }
+@media screen and (min-resolution: 192dpi) and (min-width: 1158px),
+screen and (min-resolution: 2dppx) and (min-width: 1158px),
+screen and (min-device-pixel-ratio: 2) and (min-width: 1158px) {
+    .first-section {
+        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/background-tablet@2x.jpg);
+    }
+}  
