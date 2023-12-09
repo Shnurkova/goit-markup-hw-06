@@ -501,7 +501,6 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px){
    }
 
    .item-container {
-       width: 356px;
        margin-bottom: 8px;
    }
    /* ===========/TABLET SECOND SECTION========= */
