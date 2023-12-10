@@ -430,7 +430,7 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px){
 .container-footer {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
 }
 
 .logo-text {
@@ -491,9 +491,9 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px){
     line-height: 0;
 }
 
-.subscribe-footer {
+/* .subscribe-footer {
     margin-left: 80px;
-}
+} */
 
 .subscribe {
     color: #FFF;
@@ -506,22 +506,32 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px){
 
 .form-subscribe {
     display: flex;
+    flex-direction: column;
     gap: 24px;
-    justify-content: flex-end;
-}
+} 
 
 .subscribe-footer-input {
     border-radius: 4px;
     border: 1px solid var(--WHITE, #FFF);
+    opacity: 0.3;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     background-color: transparent;
     padding: 8px 16px;
-    width: 264px;
+    width: 288px;
     height: 40px;
     font-size: 12px;
     line-height: 1.5;
     letter-spacing: 0.04em;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    color: #ffffff;
+}
+
+.subscribe-footer-input::placeholder {
+    color: #FFF;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 2;
+    letter-spacing: 0.04em;
     color: #ffffff;
 }
 
@@ -549,7 +559,6 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px){
 .subscribe-btn-icon {
     margin-left: 16px;
 }
-
 /* ============/MOBILE FOOTER============ */
 @media screen and (min-width: 768px) {
    .container {
@@ -908,6 +917,8 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px){
 
 
     /* ============DESKTOP FOOTER============= */
-    
+    .form-subscribe {
+        flex-direction: row;
+    }
     /* ============/DESKTOP FOOTER============ */
 }
