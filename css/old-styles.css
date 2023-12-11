@@ -454,6 +454,7 @@ img{
     display: inline-block;
     margin-bottom: 16px;
 }
+
 .logo-text{
     margin-right: 120px
 }
@@ -772,9 +773,9 @@ img{
     background-color: #404BBF;
 }
 
-/* .review-form-checkbox:focus + .review-form-checkbox-label > .review-form-own-checkbox{
+ .review-form-checkbox:focus + .review-form-checkbox-label > .review-form-own-checkbox{
     border: 1px solid #4D5AE5
-} */
+} 
 
 .review-form-own-checkbox-icon{
     fill: #F4F4FD;
